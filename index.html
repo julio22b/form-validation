@@ -264,13 +264,13 @@
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
             <label for="zip-code">Zip Code</label> <span style="color: red !important; display: inline; float: none;">*</span>  
-            <input id="zip-code" type="number" maxlength="5" max="99999" min="1000"name="zip-code" pattern="'^[^0-9]+$'" oninput="confirmZipCode()"/>
+            <input id="zip-code" type="number" maxlength="5" max="99999" min="1000"name="zip-code" pattern="'^[^0-9]+$'" required oninput="confirmZipCode()"/>
             <p></p>
             <label for="password">Password</label><span style="color: red !important; display: inline; float: none;">*</span>  
-            <input id="password" type="password" name="password" minlength="8" oninput="passwordCheck()"/>
+            <input id="password" type="password" name="password" minlength="8" required oninput="passwordCheck()"/>
             <p></p>
             <label for="password-confirm">Confirm Password</label><span style="color: red !important; display: inline; float: none;">*</span>  
-            <input id="password-confirm" type="password" name="password-confirm" minlength="8" oninput="confirmPassword()"/>
+            <input id="password-confirm" type="password" name="password-confirm" minlength="8" required oninput="confirmPassword()"/>
             <p></p>
             <button>submit</button>
         </form>

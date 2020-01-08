@@ -33,6 +33,7 @@ function confirmZipCode() {
 function passwordCheck() {
     const password = document.getElementById('password');
     const p = document.getElementsByTagName('p')[3];
+    confirmPassword();
 
     if (!password.checkValidity()) {
         p.textContent = 'Password is too short';

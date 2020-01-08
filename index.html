@@ -10,7 +10,7 @@
     <body>
         <form>
             <label for="email">Email</label><span style="color: red !important; display: inline; float: none;">*</span>  
-            <input type="email" name="email" id="email" required />
+            <input type="email" name="email" id="email" required oninput="confirmEmail()"/>
             <p></p>
             <label for="email-confirmation">Confirm Email</label><span style="color: red !important; display: inline; float: none;">*</span>  
             <input type="email" name="email-confirmation" id="email-confirm" required oninput="confirmEmail()"/>
